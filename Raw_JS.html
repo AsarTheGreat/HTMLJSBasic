@@ -54,6 +54,7 @@
         <span id="combArrayId" style="display: block;"></span>
     </div>
     <script>
+    //VARIABLES
     //Constant are variables that are not supposed to change.
     var likePizza = true;
     likePizza = false;
@@ -81,7 +82,7 @@
     OutsideIfTopicSpan.textContent = "topic outside if block:" + topic;
     //console.log('topic outside if block:', topic);
     ////////////////////////////////////////////////////////////////////////////////
-    
+    //LOOPING
     //looping counting through list of objects or things
     var loopList = document.getElementById("loopList");
     const max = 10;
@@ -93,7 +94,7 @@
     }
     ////////////////////////////////////////////////////////////////////////////////
     
-    //functions
+    //FUNCTIONS
     function logCompliment()
     {
         var complimentSpan = document.getElementById("complimentId");
@@ -129,6 +130,8 @@
     const ArrLeaveMessage = (name, message) => `${name}, ${message}`;
     ArrLeaveMessageSpan.textContent = ArrLeaveMessage("Parent", "My kids are learning React");//Change to name parameter to any and change message to any text
     ////////////////////////////////////////////////////////////////////////////////    
+    //CONDITIONS
+
     //Conditions Pose question to determine how number is even or odd?
     var isEvenSpan = document.getElementById("isEvenId");
     const isEven = num => {
@@ -143,7 +146,8 @@
     };
     isEven(50);
     ////////////////////////////////////////////////////////////////////////////////
-    //Object and Arrays Pose question to get old age?
+    //OBJECTS AND ARRAYS
+    
     //Printing array object
     var arrList = ["DC", "VA", "MD"];
     var arrListUl = document.getElementById("arrListId");
