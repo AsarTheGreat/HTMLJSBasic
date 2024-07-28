@@ -112,22 +112,22 @@
     const sayHello = function(name) {
         sayHelloSpan.textContent = `Hello, ${name}`;
     };
-    sayHello("Nupe");
+    sayHello("ReactStudent"); //Change to any name if want
     
     var leaveMessageSpan = document.getElementById("leaveMessageId");
     const leaveMessage = function(name, message) {
         leaveMessageSpan.textContent = `${name}, ${message}`;
     };
-    leaveMessage("Kierra", "React is a fun language");
+    leaveMessage("Student", "React is a fun language"); //Change to name parameter to any and change message to any text
     
     //Converting to arrow functions
     var ArrSayHelloSpan = document.getElementById("ArrSayHelloId");
     const ArrSayHello = name => `Hello from arrow func, ${name}`;    
-    ArrSayHelloSpan.textContent = ArrSayHello("Mike");
+    ArrSayHelloSpan.textContent = ArrSayHello("G");//Change to any name if want
     
     var ArrLeaveMessageSpan = document.getElementById("ArrLeaveMessageId");
     const ArrLeaveMessage = (name, message) => `${name}, ${message}`;
-    ArrLeaveMessageSpan.textContent = ArrLeaveMessage("Erin", "My kids are learning React");
+    ArrLeaveMessageSpan.textContent = ArrLeaveMessage("Parent", "My kids are learning React");//Change to name parameter to any and change message to any text
     ////////////////////////////////////////////////////////////////////////////////    
     //Conditions Pose question to determine how number is even or odd?
     var isEvenSpan = document.getElementById("isEvenId");
@@ -157,12 +157,12 @@
     //Object
     var isYoungSpan = document.getElementById("isYoungId");
     var person = {
-    name:"Kierra",
+    name:"Parent",
     age:45
-    }
+    }; //Can change name and age property to any you want
     
     const isYoung = p => {
-	if(p.age < 40)
+	if(p.age < 40)//Change to any age
 	{
         isYoungSpan.textContent = `${p.name}, you are still young`;
 	}
@@ -174,8 +174,8 @@
     isYoung(person);
     
     //Updating values in object
-    person.age = 65;
-    person.name = "Jasmine";
+    person.age = 65; //Change to any age
+    person.name = "Student"; //Change to any name
 
     var PersonUpdateSpan = document.getElementById("PersonUpdateId");
     PersonUpdateSpan.textContent = `Name:${person.name},Age:${person.age}`;
